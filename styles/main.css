@@ -1,0 +1,74 @@
+header {
+    display: flex;
+    justify-content: flex-start;
+    }
+header img {
+    height: 12em;
+}
+header h1 {
+    color: forestgreen;
+    margin: auto;
+}
+.content {
+    display: flex;
+}
+.container--left {
+    flex: 3;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container--left article {
+    margin-bottom: 25px;
+}
+.fishList {
+    display: flex;
+    justify-content: space-evenly;
+}
+.fish{
+    background-color: lightgreen;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    margin-left: 12px;
+    margin-right:12px;
+}
+.quotes {
+    display: flex;
+    justify-content: space-evenly;
+}
+.locations {
+    display: flex;
+    justify-content: space-evenly;
+}
+.location{
+    border: 3px solid lightgreen;
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 12px;
+    margin-right:12px;
+    text-align: center;
+}
+.container--right {
+    /* flex: 1; */
+    border: 3px solid forestgreen;
+}
+.tankTips{
+    display: flex;
+    flex-direction: column;
+}
+.container--right h2{
+    margin: center;
+    text-align: center;
+}
+.tip{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
