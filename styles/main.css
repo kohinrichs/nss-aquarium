@@ -59,6 +59,7 @@ header h1 {
 .tankTips{
     display: flex;
     flex-direction: column;
+    color: forestgreen;
 }
 .container--right h2{
     margin: center;
