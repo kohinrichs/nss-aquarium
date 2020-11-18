@@ -1,5 +1,8 @@
 // import { useFish } from './FishDataProvider.js'
-import { FishList } from './FishList.js';
+import { FishList } from './Fish/FishList.js'
+import { QuoteList } from './Quotes/QuoteList.js'
+import { LocationList } from './Location/LocationList.js'
+import { TipsList } from './Tips/TipsList.js'
 
 // const allTheFish = useFish();
 
@@ -8,3 +11,6 @@ import { FishList } from './FishList.js';
 // };
 
 FishList();
+QuoteList();
+LocationList();
+TipsList();
