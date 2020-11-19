@@ -19,12 +19,57 @@ const fishCollection = [
         image: "muskie.jpg",
         name: "Fred",
         species: "Muskie",
-        length: "34",
+        length: "35",
         location: "Mississippi River",
         diet: "Gummy Worms",
     },
 ]
 
-export const useFish = () => {
-    return fishCollection.slice()
+// // Old Collection Slice 
+// export const useFish = () => {
+//     return fishCollection.slice()
+// }
+
+
+// Fish divisible by 3
+export const mostHolyFish = () => {
+    
+    const holyFish = []
+    
+    for (const fish of fishCollection) {
+        if (fish.length % 3 === 0) {
+        holyFish.push(fish)
+     }
+    }
+
+     return holyFish
+}
+
+
+// Fish divisible by 5
+export const soldierFish = () => {
+    
+    const soldiers = []
+    
+    for (const fish of fishCollection) {
+        if (fish.length % 5 === 0 && fish.length % 3 !== 0) {
+        soldiers.push(fish)
+     }
+    }
+
+     return soldiers
+}
+
+// All the other fish
+export const nonHolyFish = () => {
+    
+    const regularFish = []
+    
+    for (const fish of fishCollection) {
+        if (fish.length % 5 !== 0 && fish.length % 3 !== 0) {
+        regularFish.push(fish)
+     }
+    }
+
+     return regularFish
 }
